@@ -1,0 +1,119 @@
+<html>
+	<haed>
+		<title>Home</title>
+		<script src="js/model.js"></script>
+		<script src="js/controller.js"></script>		
+	</haed>
+	<body>
+	<p id="status" style="text-color:green"></p>
+	<fieldset id="home">
+	<legend>HOME PAGE</legend>
+		<button style="margin:10px;" id="adminlogin">admin  login</button><br>
+		<button style="margin:10px;" id="userlogin">user login</button>
+		</fieldset>
+		<fieldset id="admin">
+<legend>ADMIN LOGIN</legend>
+<table border="1" style="position:300px 300px;">
+	<tr>
+		<td><lable>User Name:</lable></td>
+		<td><input type="text" id="adminname"></td>
+	</tr>
+	<tr>
+		<td><lable>Password:</lable></td>
+		<td><input type="password" id="adminpassword"></td>
+	</tr>
+</table>
+<button id="submitadmin" style="margin:10px">submit</button>
+<button id="backadmin" style="margin:10px">back</button>
+</fieldset> 
+<fieldset id="user" style="position:right-top">
+<legend>USER LOGIN</legend>
+<table border="1" style="position:300px 300px;">
+	<tr>
+		<td><lable>User Name:</lable></td>
+		<td><input type="text" id="username"></td>
+	</tr>
+	<tr>
+		<td><lable>Password:</lable></td>
+		<td><input type="password" id="userpassword"></td>
+	</tr>
+</table>
+<button id="submituser" style="margin:10px">submit</button>
+<button id="backuser" style="margin:10px">back</button>
+</fieldset>
+<fieldset id="adminhome">
+	<legend>Question</legend>
+	<table id="questiontable">
+		<tr>
+			<td><lable style="color:green;" >Question:</lable></td>
+			<td><input type="text" id="question"></td>
+		</tr>
+		<tr>
+			<td><lable>Option(a):</lable></td>
+			<td><input type="text" id="option1"></td>
+		</tr>
+		<tr>
+		<td><lable>Option(b):</lable></td>
+		<td><input type="text" id="option2"></td> 
+		</tr>
+		<tr>
+			<td><lable>Option(c):</lable></td>
+			<td><input type="text" id="option3"></td>
+		</tr>
+		<tr>
+			<td><lable>Option(d):</lable></td>
+			<td><input type="text" id="option4"></td>
+		</tr>
+		<tr>
+			<td><lable>Correct Ans.:</lable></td>
+			<td><input type="text" id="correctans"></td>
+		</tr>
+	</table>
+	<button id="addquestion">addquestion</button>
+	<button id="save">SAVE</button>
+</fieldset>
+<fieldset id="questionoperation">
+	<legend>QUESTION OPERATION</legend>
+	<table border="1">
+		<thead>
+			<tr>
+				<td>QueNo.</td>
+				<td>Question</td>
+				<td>Option1</td>
+				<td>Option2</td>
+				<td>Option3</td>
+				<td>Option4</td>
+				<td>CorrectAns</td>
+				<td colspan="2">Operations</td>
+			</tr>
+		</thead>
+		<tbody id="tbody"></tbody>
+	</table>
+</fieldset>
+<fieldset id="userquestion">
+<p id="timer"></p><br>
+<table id="colortable" border="1"></table>
+	<p id="questionpara" style="font-size:40px;"></p>
+	<ol type="A">
+		<li style="margin:20px"><input type="radio" id="a" name="option" value="a"><a id="optn1p"></a></li>
+		<li style="margin:20px"><input type="radio" id="b" name="option" value="b" ><a id="optn2p"></a></li>
+		<li style="margin:20px"><input type="radio" id="c" name="option" value="c"><a id="optn3p"></a></li>
+		<li style="margin:20px"><input type="radio" id="d" name="option" value="d"><a id="optn4p"></a></li>
+			</ol>
+	
+	<p>
+	<button id="next" style="float:right;margin:20px">NEXT</button>
+	<button id="previous" style="float:left;margin:20px">Prevoius</button>
+	<button id="submit" style="float:right;margin:20px;">SUBMIT</button></p>	
+		
+	
+</fieldset>
+<fieldset id="showResult">
+	<legend>RESULT ANALYSIS</legend>
+	<p id="noofquestion"></p><br>
+	<p id="attempt"></p><br>
+	<p id="right" style="color:green"></p><br>
+	<p id="wrong" style="color:red"></p>
+</fieldset>
+	</body>
+</html>
